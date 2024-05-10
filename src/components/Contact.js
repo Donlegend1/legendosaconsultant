@@ -138,14 +138,14 @@ const Contact = () => {
             className="col-12 wow fadeInUp"
             data-wow-delay="0.1s">
             <div className="rounded h-100">
-              <iframe
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63038.67469777932!2d7.5270206978705865!3d9.071310743755662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0854ca8ae575%3A0x4a782c25038d13b8!2sNyanya%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1715330617837!5m2!1sen!2sng"
                 width={1300}
                 height={450}
                 style={{ border: "0" }}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"></iframe>
+                referrerPolicy="no-referrer-when-downgrade"></iframe> */}
               <div className="d-flex align-items-center justify-content-center bg-primary rounded-bottom p-4">
                 <div className="d-flex">
                   <a
