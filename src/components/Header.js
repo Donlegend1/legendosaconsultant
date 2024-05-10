@@ -46,16 +46,6 @@ const Header = () => {
             </div>
             <div className="col-lg-4 text-center text-lg-end">
               <div className="d-flex align-items-center justify-content-end">
-                {/* <a
-                  href="#"
-                  className="btn btn-primary btn-square rounded-circle nav-fill me-3">
-                  <i className="fab fa-facebook-f text-white" />
-                </a> */}
-                {/* <a
-                  href="#"
-                  className="btn btn-primary btn-square rounded-circle nav-fill me-3">
-                  <i className="fab fa-twitter text-white" />
-                </a> */}
                 <a
                   href="https://www.instagram.com/legendosaconsultants?igsh=OGQ5ZDc2ODk2ZA=="
                   target="blank"
@@ -66,14 +56,30 @@ const Header = () => {
                   href="https://www.linkedin.com/in/legendosa-consultants-0795b2303/"
                   target="blank"
                   className="btn btn-primary btn-square rounded-circle nav-fill me-0">
+                  <i className="fab fa-whatsapp text-white" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/legendosa-consultants-0795b2303/"
+                  target="blank"
+                  className="btn btn-primary btn-square rounded-circle nav-fill me-0">
                   <i className="fab fa-linkedin-in text-white" />
+                </a>
+                <a
+                  href="#"
+                  className="btn btn-primary btn-square rounded-circle nav-fill me-3">
+                  <i className="fab fa-facebook-f text-white" />
+                </a>
+                <a
+                  href="#"
+                  className="btn btn-primary btn-square rounded-circle nav-fill me-3">
+                  <i className="fab fa-twitter text-white" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* Topbar End */}
+      // {/* Topbar End */}
       {/* Navbar & Hero Start */}
       <Container
         fluid
@@ -112,7 +118,7 @@ const Header = () => {
                   About
                 </Nav.Link>
                 <Nav.Link
-                  href="/service"
+                  href="/services"
                   className="nav-item">
                   Services
                 </Nav.Link>

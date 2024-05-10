@@ -1,39 +1,28 @@
 import React from 'react'
 
-export default function Header2() {
+export default function Header2({title}) {
   return (
-    <div className="header_top_section">
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="header_top_main">
-              <div className="call_text">
-                <a href="#">
-                  <i
-                    className="fa fa-phone"
-                    aria-hidden="true"></i>{" "}
-                  +01-40-114-6855
-                </a>
-              </div>
-              <div className="call_text_2">
-                <a href="#">
-                  <i
-                    className="fa fa-envelope"
-                    aria-hidden="true"></i>{" "}
-                  demo@gmail.com
-                </a>
-              </div>
-              <div className="call_text_1">
-                <a href="#">
-                  <i
-                    className="fa fa-map-marker"
-                    aria-hidden="true"></i>{" "}
-                  Mordern Tawon Mosco
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="container-fluid bg-breadcrumb">
+      <div className="bg-breadcrumb-single" />
+      <div
+        className="container text-center py-5"
+        style={{ "max-width": "900px" }}>
+        <h4
+          className="text-white display-4 mb-4 wow fadeInDown"
+          data-wow-delay="0.1s">
+          About Us
+        </h4>
+        <ol
+          className="breadcrumb justify-content-center mb-0 wow fadeInDown"
+          data-wow-delay="0.3s">
+          <li className="breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="#">Pages</a>
+          </li>
+          <li className="breadcrumb-item active text-primary">{title}</li>
+        </ol>
       </div>
     </div>
   );

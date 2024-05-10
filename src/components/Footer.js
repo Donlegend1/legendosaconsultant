@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   Container,
   Row,
@@ -11,6 +11,43 @@ import {
 export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
+
+   useEffect(() => {
+     const loadWhatsAppWidget = () => {
+       // Replace with your group invite link
+
+       const options = {
+         whatsapp: "+2348147122184", // WhatsApp number
+         call_to_action: "Chat us now", // Call to action
+         position: "left", // Position may be 'right' or 'left'
+         pre_filled_message: `Hello, Chat us now`, // WhatsApp pre-filled message
+       };
+
+       const proto = document.location.protocol;
+       const host = "getbutton.io";
+       const url = proto + "//static." + host;
+
+       const script = document.createElement("script");
+       script.type = "text/javascript";
+       script.async = true;
+       script.src = url + "/widget-send-button/js/init.js";
+
+       script.onload = () => {
+         window.WhWidgetSendButton.init(host, proto, options);
+       };
+
+       document.body.appendChild(script);
+     };
+
+
+     loadWhatsAppWidget();
+
+     // Cleanup function
+     return () => {
+       // You may want to remove the script when the component unmounts
+       // Example: document.body.removeChild(script);
+     };
+   }, []);
 
   return (
     <div>
@@ -89,20 +126,6 @@ export default function Footer() {
                 </a>
                 <div className="d-flex align-items-center">
                   <a
-                    href="#"
-                    className="btn btn-light btn-md-square me-2"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a
-                    href="#"
-                    className="btn btn-light btn-md-square me-2"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a
                     href="https://www.instagram.com/legendosaconsultants?igsh=OGQ5ZDc2ODk2ZA=="
                     className="btn btn-light btn-md-square me-2"
                     target="_blank"
@@ -115,6 +138,20 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer">
                     <i className="fab fa-linkedin-in" />
+                  </a>
+                  <a
+                    href="#"
+                    className="btn btn-light btn-md-square me-2"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a
+                    href="#"
+                    className="btn btn-light btn-md-square me-2"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i className="fab fa-twitter" />
                   </a>
                   <a
                     href="#"
