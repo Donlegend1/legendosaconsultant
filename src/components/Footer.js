@@ -50,187 +50,230 @@ export default function Footer() {
    }, []);
 
   return (
-    <div>
-      <Container
-        fluid
-        className="footer py-5 wow fadeIn"
-        data-wow-delay="0.2s">
-        <Container>
-          <Row className="g-5">
-            <Col
-              md={6}
-              lg={3}>
-              <div className="footer-item d-flex flex-column">
-                <h4 className="text-white mb-4">Newsletter</h4>
-                <p className="mb-3">
-                  Stay updated with our latest news and developments by
-                  subscribing to our newsletter.
-                </p>
-                <InputGroup className="position-relative mx-auto rounded-pill">
-                  <FormControl
-                    placeholder="Enter your email"
-                    className="rounded-pill py-3 ps-4 pe-5"
-                  />
-                  <Button
-                    variant="primary"
-                    className="rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
-                    type="button">
-                    Subscribe
-                  </Button>
-                </InputGroup>
-              </div>
-            </Col>
-            <Col
-              md={6}
-              lg={3}>
-              <div className="footer-item d-flex flex-column">
-                <h4 className="text-white mb-4">Explore</h4>
-                <a href="#">
-                  <i className="fas fa-angle-right me-2" /> Home
-                </a>
-                <a href="#">
-                  <i className="fas fa-angle-right me-2" /> Services
-                </a>
-                <a href="#">
-                  <i className="fas fa-angle-right me-2" /> About Us
-                </a>
-                <a href="#">
-                  <i className="fas fa-angle-right me-2" /> Projects
-                </a>
-                <a href="#">
-                  <i className="fas fa-angle-right me-2" /> Testimonials
-                </a>
-                <a href="#">
-                  <i className="fas fa-angle-right me-2" /> Our Team
-                </a>
-                <a href="#">
-                  <i className="fas fa-angle-right me-2" /> Contact Us
-                </a>
-              </div>
-            </Col>
-            <Col
-              md={6}
-              lg={3}>
-              <div className="footer-item d-flex flex-column">
-                <h4 className="text-white mb-4">Contact Info</h4>
-                <a href="#">
-                  <i className="fa fa-map-marker-alt me-2" /> Central Business
-                  District Abuja
-                </a>
-                <a href="#">
-                  <i className="fas fa-envelope me-2" />{" "}
-                  legendosaconsultants@gmail.com
-                </a>
-                <a href="#">
-                  <i className="fas fa-phone me-2" /> +2348147122184
-                </a>
-                <div className="d-flex align-items-center">
-                  <a
-                    href="https://www.instagram.com/legendosaconsultants?igsh=OGQ5ZDc2ODk2ZA=="
-                    className="btn btn-light btn-md-square me-2"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/legendosa-consultants-0795b2303/"
-                    className="btn btn-light btn-md-square me-2"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                  <a
-                    href="#"
-                    className="btn btn-light btn-md-square me-2"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a
-                    href="#"
-                    className="btn btn-light btn-md-square me-2"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a
-                    href="#"
-                    className="btn btn-light btn-md-square"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <i className="fab fa-whatsapp" />
-                  </a>
-                </div>
-              </div>
-            </Col>
-            <Col
-              md={6}
-              lg={3}>
-              <div className="footer-item-post d-flex flex-column">
-                <h4 className="text-white mb-4">Popular Posts</h4>
-                <div className="d-flex flex-column mb-3">
-                  <p className="text-uppercase text-primary mb-2">
-                    Programming
+    <>
+      <footer
+        id="footer"
+        className="footer ">
+        {/* Footer Top */}
+        <div className="footer-top">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="single-footer">
+                  <h2>About Us</h2>
+                  <p>
+                    Lorem ipsum dolor sit am consectetur adipisicing elit do
+                    eiusmod tempor incididunt ut labore dolore magna.
                   </p>
-                  <a
-                    href="#"
-                    className="text-body">
-                    10 Best Practices for Clean Code
-                  </a>
-                </div>
-                <div className="d-flex flex-column mb-3">
-                  <p className="text-uppercase text-primary mb-2">
-                    Software Development
-                  </p>
-                  <a
-                    href="#"
-                    className="text-body">
-                    Agile vs. Waterfall: Choosing the Right Methodology
-                  </a>
-                </div>
-                <div className="footer-btn text-start">
-                  <a
-                    href="#"
-                    className="btn btn-light rounded-pill px-4">
-                    View All Posts <i className="fa fa-arrow-right ms-1" />
-                  </a>
+                  {/* Social */}
+                  <ul className="social">
+                    <li>
+                      <a href="#">
+                        <i className="icofont-facebook" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="icofont-google-plus" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="icofont-twitter" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="icofont-vimeo" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="icofont-pinterest" />
+                      </a>
+                    </li>
+                  </ul>
+                  {/* End Social */}
                 </div>
               </div>
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Container
-        fluid
-        className="copyright py-4">
-        <Container>
-          <Row className="g-4 align-items-center">
-            <Col
-              md={6}
-              className="text-center text-md-start mb-md-0">
-              <span className="text-body">
-                <a
-                  href="#"
-                  className="border-bottom text-primary">
-                  <i className="fas fa-copyright text-light me-2" />
-                  Legend OSA Consultants
-                </a>
-                , All rights reserved.
-              </span>
-            </Col>
-            {/* <Col
-              md={6}
-              className="text-center text-md-end text-body">
-              Legend OSA Consultant{" "}
-              <a
-                href="https://htmlcodex.com"
-                className="border-bottom text-primary">
-                HTML Codex
-              </a>
-            </Col> */}
-          </Row>
-        </Container>
-      </Container>
-    </div>
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="single-footer f-link">
+                  <h2>Quick Links</h2>
+                  <div className="row">
+                    <div className="col-lg-6 col-md-6 col-12">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            Home
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            About Us
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            Services
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            Our Cases
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            Other Links
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-12">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            Consuling
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            Finance
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            Testimonials
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            FAQ
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i
+                              className="fa fa-caret-right"
+                              aria-hidden="true"
+                            />
+                            Contact Us
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="single-footer">
+                  <h2>Open Hours</h2>
+                  <p>
+                    Lorem ipsum dolor sit ame consectetur adipisicing elit do
+                    eiusmod tempor incididunt.
+                  </p>
+                  <ul className="time-sidual">
+                    <li className="day">
+                      Monday - Fridayp <span>8.00-20.00</span>
+                    </li>
+                    <li className="day">
+                      Saturday <span>9.00-18.30</span>
+                    </li>
+                    <li className="day">
+                      Monday - Thusday <span>9.00-15.00</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="single-footer">
+                  <h2>Newsletter</h2>
+                  <p>
+                    subscribe to our newsletter to get allour news in your
+                    inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit,
+                  </p>
+                  <form
+                    action="mail/mail.php"
+                    method="get"
+                    target="_blank"
+                    className="newsletter-inner">
+                    <input
+                      name="email"
+                      placeholder="Email Address"
+                      className="common-input"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Your email address'"
+                      required
+                      type="email"
+                    />
+                    <button className="button">
+                      <i className="icofont icofont-paper-plane" />
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*/ End Footer Top */}
+        {/* Copyright */}
+        <div className="copyright">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 col-md-12 col-12">
+                <div className="copyright-content">
+                  <p>
+                    © Copyright 2018 | All Rights Reserved by{" "}
+                    <a
+                      href="https://www.wpthemesgrid.com"
+                      target="_blank">
+                      wpthemesgrid.com
+                    </a>{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*/ End Copyright */}
+      </footer>
+    </>
   );
 }
