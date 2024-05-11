@@ -16,7 +16,7 @@ const Loaderimg = () => {
   return (
     <div id="global-loader">
       <img
-        src={"/assets/images/logo.png"}
+        src={"/logo512.png"}
         className="loader-img"
         alt="Loader"
       />
@@ -25,7 +25,7 @@ const Loaderimg = () => {
 };
 root.render(
   <Fragment>
-    {/* <ContextProvider> */}
+   
     <BrowserRouter>
       <React.Suspense fallback={Loaderimg()}>
         <Routes>
@@ -55,7 +55,7 @@ root.render(
         </Routes>
       </React.Suspense>
     </BrowserRouter>
-    {/* </ContextProvider> */}
+
   </Fragment>
 );
 
