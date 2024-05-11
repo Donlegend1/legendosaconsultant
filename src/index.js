@@ -24,34 +24,36 @@ const Loaderimg = () => (
 
 root.render(
   <>
-    <BrowserRouter>
-      <React.Suspense fallback={<Loaderimg />}>
-        <Routes>
-          <Route element={<App />}>
-            <Route
-              path={`${process.env.PUBLIC_URL}/`}
-              element={<Home />}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/about`}
-              element={<About />}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/services`}
-              element={<Services />}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/project`}
-              element={<Projects />}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/contact`}
-              element={<Contact />}
-            />
-          </Route>
-        </Routes>
-      </React.Suspense>
-    </BrowserRouter>
+    <React.StrictMode>
+      <BrowserRouter>
+        <React.Suspense fallback={<Loaderimg />}>
+          <Routes>
+            <Route element={<App />}>
+              <Route
+                path={`${process.env.PUBLIC_URL}/`}
+                element={<Home />}
+              />
+              <Route
+                path={`${process.env.PUBLIC_URL}/about`}
+                element={<About />}
+              />
+              <Route
+                path={`${process.env.PUBLIC_URL}/services`}
+                element={<Services />}
+              />
+              <Route
+                path={`${process.env.PUBLIC_URL}/project`}
+                element={<Projects />}
+              />
+              <Route
+                path={`${process.env.PUBLIC_URL}/contact`}
+                element={<Contact />}
+              />
+            </Route>
+          </Routes>
+        </React.Suspense>
+      </BrowserRouter>
+    </React.StrictMode>
   </>
 );
 
