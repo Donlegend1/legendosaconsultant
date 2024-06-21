@@ -18,7 +18,7 @@ const Header = () => {
     <>
       <div>
         {/* Preloader */}
-        <div className="preloader">
+        {/* <div className="preloader">
           <div className="loader">
             <div className="loader-outter" />
             <div className="loader-inner" />
@@ -37,7 +37,7 @@ const Header = () => {
               </svg>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End Preloader */}
         {/* Get Pro Button */}
         <ul className="pro-features">

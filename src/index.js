@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
@@ -10,7 +10,7 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+
 
 const Loaderimg = () => (
   <div id="global-loader">
@@ -22,8 +22,8 @@ const Loaderimg = () => (
   </div>
 );
 
-root.render(
-  <>
+ReactDOM.render(
+  
     <React.StrictMode>
       <BrowserRouter>
         <React.Suspense fallback={<Loaderimg />}>
@@ -53,7 +53,8 @@ root.render(
           </Routes>
         </React.Suspense>
       </BrowserRouter>
-    </React.StrictMode>
-  </>
+    </React.StrictMode>,
+    document.getElementById("root")
+  
 );
 
