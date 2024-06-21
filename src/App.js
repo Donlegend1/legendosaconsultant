@@ -1,24 +1,14 @@
-import React, { Fragment } from "react";
-import { Outlet } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
-import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-const Loaderimg = () => (
-  <div id="global-loader">
-    <img
-      src={"/logo512.png"}
-      className="loader-img"
-      alt="Loader"
-    />
-  </div>
-);
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
 const App = () => {
   return (
@@ -26,27 +16,26 @@ const App = () => {
       <Header />
       <Routes>
         <Route
-          path={`${process.env.PUBLIC_URL}/`}
+          path="/"
           element={<Home />}
         />
         <Route
-          path={`${process.env.PUBLIC_URL}/about`}
+          path="/about"
           element={<About />}
         />
         <Route
-          path={`${process.env.PUBLIC_URL}/services`}
+          path="/services"
           element={<Services />}
         />
         <Route
-          path={`${process.env.PUBLIC_URL}/project`}
+          path="/projects"
           element={<Projects />}
         />
         <Route
-          path={`${process.env.PUBLIC_URL}/contact`}
+          path="/contact"
           element={<Contact />}
         />
       </Routes>
-    
       <Footer />
     </BrowserRouter>
   );
