@@ -97,13 +97,11 @@ const Header = () => {
                   <ul className="top-contact">
                     <li>
                       <i className="fa fa-phone" />
-                      +880 1234 56789
+                      +2348147122184
                     </li>
                     <li>
                       <i className="fa fa-envelope" />
-                      <a href="mailto:support@yourmail.com">
-                        support@yourmail.com
-                      </a>
+                      <a href="#">legendosaconsultants@gmail</a>
                     </li>
                   </ul>
                   {/* End Top Contact */}
@@ -122,7 +120,7 @@ const Header = () => {
                     <div className="logo">
                       <a href="index.html">
                         <img
-                          src="img/logo.png"
+                          src="/logo.jpeg"
                           alt="#"
                         />
                       </a>
@@ -143,38 +141,19 @@ const Header = () => {
                             </a>
                             <ul className="dropdown">
                               <li>
-                                <a href="index.html">Home Page 1</a>
+                                <a href="/">Home Page 1</a>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href="#">Doctos </a>
+                            <a href="/">About </a>
                           </li>
                           <li>
-                            <a href="#">Services </a>
+                            <a href="/services">Services </a>
                           </li>
+
                           <li>
-                            <a href="#">
-                              Pages <i className="icofont-rounded-down" />
-                            </a>
-                            <ul className="dropdown">
-                              <li>
-                                <a href="404.html">404 Error</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#">
-                              Blogs <i className="icofont-rounded-down" />
-                            </a>
-                            <ul className="dropdown">
-                              <li>
-                                <a href="blog-single.html">Blog Details</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="/contact">Contact Us</a>
                           </li>
                         </ul>
                       </nav>
@@ -184,7 +163,7 @@ const Header = () => {
                   <div className="col-lg-2 col-12">
                     <div className="get-quote">
                       <a
-                        href="appointment.html"
+                        href="/contact"
                         className="btn">
                         Book Appointment
                       </a>

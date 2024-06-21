@@ -48,6 +48,8 @@ export default function Footer() {
        // Example: document.body.removeChild(script);
      };
    }, []);
+  
+  const todaysDate = new Date();
 
   return (
     <>
@@ -112,7 +114,7 @@ export default function Footer() {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/about">
                             <i
                               className="fa fa-caret-right"
                               aria-hidden="true"
@@ -121,7 +123,7 @@ export default function Footer() {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/services">
                             <i
                               className="fa fa-caret-right"
                               aria-hidden="true"
@@ -135,7 +137,7 @@ export default function Footer() {
                               className="fa fa-caret-right"
                               aria-hidden="true"
                             />
-                            Our Cases
+                            Our  Services
                           </a>
                         </li>
                         <li>
@@ -160,17 +162,9 @@ export default function Footer() {
                             Consuling
                           </a>
                         </li>
+                       
                         <li>
-                          <a href="#">
-                            <i
-                              className="fa fa-caret-right"
-                              aria-hidden="true"
-                            />
-                            Finance
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
+                          <a href="/testimonial">
                             <i
                               className="fa fa-caret-right"
                               aria-hidden="true"
@@ -179,7 +173,7 @@ export default function Footer() {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/faq">
                             <i
                               className="fa fa-caret-right"
                               aria-hidden="true"
@@ -188,7 +182,7 @@ export default function Footer() {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/contact">
                             <i
                               className="fa fa-caret-right"
                               aria-hidden="true"
@@ -205,19 +199,16 @@ export default function Footer() {
                 <div className="single-footer">
                   <h2>Open Hours</h2>
                   <p>
-                    Lorem ipsum dolor sit ame consectetur adipisicing elit do
-                    eiusmod tempor incididunt.
+                    Our opening hours are as follows
                   </p>
                   <ul className="time-sidual">
                     <li className="day">
-                      Monday - Fridayp <span>8.00-20.00</span>
+                      Monday - Fridays <span>8.00-20.00</span>
                     </li>
                     <li className="day">
                       Saturday <span>9.00-18.30</span>
                     </li>
-                    <li className="day">
-                      Monday - Thusday <span>9.00-15.00</span>
-                    </li>
+                   
                   </ul>
                 </div>
               </div>
@@ -225,9 +216,7 @@ export default function Footer() {
                 <div className="single-footer">
                   <h2>Newsletter</h2>
                   <p>
-                    subscribe to our newsletter to get allour news in your
-                    inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit,
+                    subscribe to our newsletter to get latest events
                   </p>
                   <form
                     action="mail/mail.php"
@@ -260,11 +249,12 @@ export default function Footer() {
               <div className="col-lg-12 col-md-12 col-12">
                 <div className="copyright-content">
                   <p>
-                    © Copyright 2018 | All Rights Reserved by{" "}
+                    © Copyright {todaysDate.getFullYear} | All Rights Reserved
+                    by{" "}
                     <a
                       href="https://www.wpthemesgrid.com"
                       target="_blank">
-                      wpthemesgrid.com
+                      Legend OSA Consultants
                     </a>{" "}
                   </p>
                 </div>
